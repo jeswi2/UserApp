@@ -4,18 +4,18 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 <label for="" class="form-label">UserName</label>
-<input type="text" class="form-control">
+<input type="text" class="form-control" name="name" [(ngModel)]="name">
 
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Password</label>
-                    <input type="text" class="form-control">
+                    <input type="password" class="form-control" name="password" [(ngModel)]="password">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                    
-                    <a href="/dashboard" class="btn btn-primary">Login</a>
+                   <button class="btn btn-primary" (click)="readValues()">Login</button>
 
 
                 </div>
